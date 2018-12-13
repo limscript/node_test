@@ -1,0 +1,19 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "description": "node test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limscript/node_test.git"
+  },
+  "author": "limscript",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limscript/node_test/issues"
+  },
+  "homepage": "https://github.com/limscript/node_test#readme"
+}

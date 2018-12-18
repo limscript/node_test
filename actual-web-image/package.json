@@ -1,0 +1,15 @@
+{
+  "name": "actual-web-image",
+  "version": "1.0.0",
+  "description": "web image crawler demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "limscript",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0"
+  }
+}

@@ -1,6 +1,6 @@
 // 引入基础模块
+const request = require('request')
 var fs = require('fs')
-var request = require('request')
 var qs = require('querystring')
 
 // 通过JSON.parse来解析IP列表中的地址
@@ -39,9 +39,8 @@ function geo2weathers(geos, callback) {
   var geo
   var remain = geos.length
   for (let i = 0; i < remain; i++) {
-    geo = geos[i]
-    (function (geo) {
-      geo2weathers(geo.latitude, geo.longitude, (err, weather) =>{
+    geo = geos[i](function(geo) {
+      geo2weathers(geo.latitude, geo.longitude, (err, weather) => {
         if (err) {
           callback(err)
         } else {
@@ -54,7 +53,6 @@ function geo2weathers(geos, callback) {
         }
       })
     })(geo)
-    
   }
   var params = {
     lat: lat,

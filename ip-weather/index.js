@@ -1,3 +1,5 @@
+// 假demo，根本没起作用
+
 // 引入基础模块
 const request = require('request')
 var fs = require('fs')

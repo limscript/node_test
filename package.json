@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/limscript/node_test/issues"
   },
-  "homepage": "https://github.com/limscript/node_test#readme"
+  "homepage": "https://github.com/limscript/node_test#readme",
+  "dependencies": {
+    "mongoose": "^5.4.3",
+    "mysql": "^2.16.0"
+  }
 }
